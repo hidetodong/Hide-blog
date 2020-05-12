@@ -1,18 +1,46 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <div class="top-nav">
+      <div class="top-middle">
+        <div class="nav-title">Hide的Blog</div>
+      </div>
+    </div>
+    <div class="body-wrap"></div>
+    <div class="footer">123</div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
+
+<style lang="scss" scoped>
+.top-nav {
+  height: 100px;
+  box-shadow: 0px 2px 2px 2px #eee;
+  position: sticky;
+  top: 0;
+  .top-middle {
+    width: 1080px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    .nav-title{
+      font-size:30px;
+    }
+  }
+
+}
+.body-wrap {
+  width: 1080px;
+  min-height: 800px;
+  background: #eeeeee;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+</style>
